@@ -120,8 +120,10 @@ module.exports = function(appPath, appName, verbose, originalDirectory, template
   // Change displayed command to yarn instead of yarnpkg
   var displayedCommand = useYarn ? 'yarn' : 'npm';
 
-  console.log();
   console.log('Success! Created ' + appName + ' at ' + appPath);
+  console.log(chalk.red('VERY IMPORTANT:'));
+  console.log(chalk.red('HOUSE CANARY'));
+  console.log();
   console.log('Inside that directory, you can run several commands:');
   console.log();
   console.log(chalk.cyan('  ' + displayedCommand + ' start'));
