@@ -24,17 +24,13 @@ const render = Component => {
         <Component />
       </AppContainer>
     </Provider>,
-    document.querySelector('#root')
+    document.querySelector('#app')
   );
 };
 
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./containers/App', () => {
-    render(App);
-  });
-  module.hot.accept('./reducers', () => {
-    store.replaceReducer(rootReducer);
-  });
+  module.hot.accept('./containers/App', () => { render(App); });
+  module.hot.accept('./reducers', () => { store.replaceReducer(rootReducer); });
 }
