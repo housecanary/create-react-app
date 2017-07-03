@@ -24,7 +24,7 @@ const render = Component => {
         <Component />
       </AppContainer>
     </Provider>,
-    document.querySelector('#app')
+    document.querySelector('#root')
   );
 };
 
