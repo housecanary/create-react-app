@@ -12,15 +12,13 @@
   overflow-y: 'auto'
 }
 
-/*
 .clientHeader {
-  composes: blueGradientBg;
   padding: 1rem 5rem 4rem 5rem;
   color: white;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}*/
+}
 
 .listContainer {
   background-color: white;

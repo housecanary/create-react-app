@@ -1,7 +1,5 @@
 // @flow
 import React from 'react';
-import { Button, ProgressBar } from 'react-toolbox';
-import {Table, TableHead, TableRow, TableCell} from 'react-toolbox/lib/table';
 
 import type { Order } from '../actions/order.actions';
 
@@ -21,20 +19,24 @@ const OrderList = ({
   }
   return (
     <div>
-      <Table selectable={false}>
-        <TableHead>
-          <TableCell>Name</TableCell>
-        </TableHead>
-        {
-          orders.map(order => {
-            return <TableRow key={order.id}
-              className={`${styles.row}`}
-              title='View Order Items'>
-              <TableCell>{order.name}</TableCell>
-            </TableRow>;
-          })
-        }
-      </Table>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <div>Name</div>
+            </th>
+          </tr>
+          {
+            orders.map(order => {
+              return <tr key={order.id}
+                className={`${styles.row}`}
+                title='View Order Items'>
+                <td>{order.name}</td>
+              </tr>;
+            })
+          }
+        </tbody>
+      </table>
     </div>
   );
 };

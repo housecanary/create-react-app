@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import { connect } from 'react-redux';
-import { Layout, Panel } from 'react-toolbox';
 
 import type { Dispatch } from 'redux';
 import type { DashboardState } from '../reducers/dashboard.reducer';
@@ -26,8 +25,8 @@ class Dashboard extends React.Component {
       dashboardState
     } = this.props;
     return (
-      <Layout>
-        <Panel>
+      <div>
+        <div>
           <div className={commonStyles.panelContent}>
             <div className={commonStyles.clientHeader}>
               <div>
@@ -41,8 +40,8 @@ class Dashboard extends React.Component {
                 />
             </div>
           </div>
-        </Panel>
-      </Layout>
+        </div>
+      </div>
     );
   }
 }
