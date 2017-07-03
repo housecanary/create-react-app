@@ -1,6 +1,6 @@
 {
-  "name": "react-scripts",
-  "version": "1.0.10",
+  "name": "housecanary-react-scripts",
+  "version": "1.0.18",
   "description": "Housecanary configuration and scripts for Create React App.",
   "repository": "housecanary/create-react-app",
   "license": "BSD-3-Clause",
@@ -21,19 +21,6 @@
     "react-scripts": "./bin/react-scripts.js"
   },
   "dependencies": {
-    "es6-promise": "4.1.0",
-    "isomorphic-fetch": "2.2.1",
-    "postcss": "6.0.1",
-    "postcss-cssnext": "2.10.0",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
-    "react-hot-loader": "3.0.0-beta.6",
-    "react-redux": "5.0.4",
-    "redux": "3.6.0",
-    "redux-saga": "0.15.1",
-    "redux-saga-router": "2.1.0"
-  },
-  "devDependencies": {    
     "autoprefixer": "7.1.1",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
@@ -66,12 +53,15 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
+    "postcss": "6.0.1",
+    "postcss-cssnext": "2.10.0",
     "postcss-loader": "1.3.3",
     "postcss-flexbugs-fixes": "^3.0.0",
     "postcss-icss-composes": "^2.0.3",
     "sass-loader": "6.0.3",
     "promise": "7.1.1",
     "react-dev-utils": "^3.0.2",
+    "react-hot-loader": "3.0.0-beta.6",
     "react-error-overlay": "^1.0.9",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.3",
@@ -80,6 +70,16 @@
     "webpack-dev-server": "2.5.0",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.3"
+  },
+  "devDependencies": {    
+    "es6-promise": "4.1.0",
+    "isomorphic-fetch": "2.2.1",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-redux": "5.0.4",
+    "redux": "3.6.0",
+    "redux-saga": "0.15.1",
+    "redux-saga-router": "2.1.0"
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"
