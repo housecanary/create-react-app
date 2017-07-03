@@ -1,6 +1,6 @@
 {
   "name": "housecanary-react-scripts",
-  "version": "1.0.18",
+  "version": "1.0.20",
   "description": "Housecanary configuration and scripts for Create React App.",
   "repository": "housecanary/create-react-app",
   "license": "BSD-3-Clause",
@@ -58,6 +58,10 @@
     "postcss-loader": "1.3.3",
     "postcss-flexbugs-fixes": "^3.0.0",
     "postcss-icss-composes": "^2.0.3",
+    "redux": "3.6.0",
+    "react-redux": "5.0.4",
+    "redux-saga": "0.15.1",
+    "redux-saga-router": "2.1.0",
     "sass-loader": "6.0.3",
     "promise": "7.1.1",
     "react-dev-utils": "^3.0.2",
@@ -75,11 +79,7 @@
     "es6-promise": "4.1.0",
     "isomorphic-fetch": "2.2.1",
     "react": "15.5.4",
-    "react-dom": "15.5.4",
-    "react-redux": "5.0.4",
-    "redux": "3.6.0",
-    "redux-saga": "0.15.1",
-    "redux-saga-router": "2.1.0"
+    "react-dom": "15.5.4"
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"
